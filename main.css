@@ -1,0 +1,307 @@
+/* header-login */
+#container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "news news news news"
+    "footer footer footer footer";
+}
+#header {
+  position: fixed;
+  grid-area: header;
+  height: 9rem;
+  background-color: var(--white-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#main {
+  grid-area: main;
+  height: 226rem;
+}
+#news {
+  grid-area: news;
+  height: 42rem;
+}
+#footer {
+  grid-area: footer;
+  height: 26rem;
+  background-color: rgb(70, 71, 71);
+}
+ul.header__nav-login-list {
+  float: right;
+  margin-right: 3.1rem;
+}
+
+.header__nav-login-item {
+  display: inline-block;
+  padding: 2px 4px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.header__nav-login-item:hover {
+  text-decoration: underline;
+}
+.header__nav-login-item .search-box {
+  background-color: var(--light-color);
+  border: none;
+  outline: none;
+  padding: 3px;
+  border-radius: 30px;
+}
+.search-box .search-text {
+  border: none;
+  outline: none;
+  background-color: none;
+  margin: -0.1rem;
+  border-radius: 30px;
+  margin-left: 0.3rem;
+  width: 0;
+  padding: 0;
+  height: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.search-box .search-btn {
+  border: none;
+  padding: 3px 3px 3px 0;
+  background-color: var(--light-color);
+  border-radius: 30px;
+}
+.search-box:hover .search-text {
+  width: 20rem;
+  text-decoration: none;
+}
+/* header-lable */
+.header-lable {
+  color: var(--primary-color);
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  margin-left: 3.1rem;
+  margin-top: -1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+/* header-menu */
+ul {
+  padding: 0;
+  margin: 0;
+}
+.header__nav-menu-list {
+  list-style-type: none;
+  float: left;
+  height: 4.2rem;
+  width: auto;
+}
+li.header__nav-menu-item {
+  position: relative;
+  display: inline-block;
+  padding: 4px 4px 0 4px;
+  text-transform: uppercase;
+  margin-left: 3.1rem;
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+li.header__nav-menu-item > a:hover {
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+.dropdown-content {
+  position: absolute;
+}
+.dropdown-content a {
+  background-color: var(--light-color);
+  color: var(--text-color);
+  padding: 8px;
+  display: block;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.dropdown-content a:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 5px;
+}
+.dropdown-content-shirt {
+  width: 16rem;
+  display: none;
+}
+.header__nav-menu-item:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content-dress {
+  display: none;
+  width: 14rem;
+}
+/* Main slogan */
+.main-slogan {
+  padding-top: 160px;
+  background-image: url(../images/logo.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 57rem;
+  width: 100%;
+  background-size: contain;
+}
+.main-slogan h2 {
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--text-color);
+  font-size: 6.4rem;
+  padding-left: 100px;
+  text-transform: capitalize;
+}
+h2 > span {
+  padding-left: 156px;
+}
+/* Aniamtion code for slogan */
+@keyframes slogan {
+  from {
+    color: var(--text-color);
+    padding-left: 20px;
+  }
+  to {
+    color: var(--primary-color);
+    padding-left: 120px;
+  }
+}
+.main-slogan h2 {
+  color: var(--text-color);
+  animation-name: slogan;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+/* main-promotion */
+div .main-promotion-row {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.main-promotion-column {
+  flex: 50%;
+  max-width: 50%;
+  box-shadow: 2px 2px 6px 2px var(--border-color);
+  max-width: 600px;
+  max-height: 800px;
+  margin: 0 1rem 0 1rem;
+}
+.main-promotion-column > a {
+  text-decoration-line: none;
+}
+.main-promotion-column > a > div {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+.main-promotion-column > a > div > h4 {
+  font-size: 1.8rem;
+}
+/* can write class attr instead of div element, it'll affect to other if having the same syntax element */
+div > a > img {
+  max-width: 600px;
+  max-height: 800px;
+  align-items: center;
+}
+/* Responsive layout */
+@media (max-width: 600px) {
+  .main-promotion-column {
+    flex: 100%;
+    width: 100%;
+  }
+}
+/* main-product */
+div.main-product-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-product-column {
+  margin: 18rem 2rem 0 2rem;
+}
+.main-product-column > a {
+  text-decoration-line: none;
+}
+.main-product-column .main-product-column-dress {
+  margin-left: 1.2rem;
+}
+
+.main-product-column > a > img {
+  width: 560px;
+  height: 600px;
+  box-shadow: 2px 2px 03px var(--border-color);
+}
+
+.main-product-column > a > div {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+.main-product-column > a > div > h5 {
+  font-size: 1.6rem;
+}
+/* Responsive layout */
+@media (max-width: 600px) {
+  .main-product-column {
+    flex: 100%;
+    width: 100%;
+  }
+}
+/* last-news */
+#news > h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2rem;
+}
+.news-row {
+  display: flex;
+  height: 22rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.news-column > a {
+  text-decoration-line: none;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.news-column > a > img {
+  flex: 20%;
+  width: 30rem;
+  height: 18rem;
+}
+.news-column > a > p {
+  padding-top: 2px;
+}
+.news-column > a :hover {
+  border: 1px solid var(--border-color);
+  box-shadow: 2px 2px 3px 1px var(--border-color);
+  padding: 4px;
+  width: 36rem;
+  height: 24rem;
+}
+/* footer */
+.footer-row {
+  width: 80%;
+  margin: 0 32rem;
+  color: #ccc;
+  font-size: 1.4rem;
+}
+.footer-column {
+  width: 20%;
+  float: left;
+  margin-top: 2rem;
+}
+.footer-column > ul > li {
+  list-style-type: none;
+  color: #ccc;
+  padding: 2px;
+  margin: 4px;
+}
+.footer-column > ul > li > a {
+  color: #ccc;
+}
+.footer-column > ul > li :hover {
+  font-size: 1.6rem;
+  text-decoration-line: underline;
+}
