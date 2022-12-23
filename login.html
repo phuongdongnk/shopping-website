@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+      }
+      form {
+        border: 1px solid #dadce0;
+        padding: 40px;
+        border-radius: 5px;
+      }
+      form h3 {
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .form-group {
+        position: relative;
+      }
+      input {
+        height: 50px;
+        width: 300px;
+        border: 1px solid #dadce0;
+        border-radius: 5px;
+        margin: 6px;
+        outline: none;
+        font-size: inherit;
+        transition: all 0.4s ease-in-out;
+      }
+      label {
+        position: absolute;
+        padding: 0 5px;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        /*pointer-events is important attr for this sitiation */
+        pointer-events: none;
+        transition: all 0.4s ease-in-out;
+      }
+      .form-btn {
+        height: 40px;
+        width: 140px;
+        margin-top: 36px;
+        border-radius: 5px;
+        float: right;
+        border: 1px solid #dadce0;
+        background-color: rgb(11, 146, 11);
+        color: #fff;
+        cursor: pointer;
+        font-weight: 500;
+      }
+      .form-btn:hover {
+        opacity: 0.9;
+      }
+      .form-group input:focus + label,
+      .form-group input:valid + label {
+        /* "valid" is a important selector in this case */
+        top: 4px;
+        font-size: 14px;
+        color: rgb(11, 146, 11);
+        font-weight: 500;
+      }
+      .form-group input:focus {
+        border: 1px solid rgb(11, 146, 11);
+      }
+      div > a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #333;
+      }
+      .form-note {
+        padding: 2px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <form action="#">
+        <h3>ĐĂNG NHẬP</h3>
+        <div class="form-group">
+          <!-- lable "for" will connect wih id of input -->
+          <input type="text" id="email" name="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" name="password" required />
+          <label for="password">Mật khẩu</label>
+        </div>
+        <div><input class="form-btn" type="submit" value="ĐĂNG NHẬP" /></div>
+        <div class="form-note"><a href="#">Bạn đã quên mật khẩu?</a></div>
+      </form>
+    </div>
+  </body>
+</html>

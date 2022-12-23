@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sản phẩm mới</title>
+    <link rel="stylesheet" href="./assets.css/base.css" />
+    <link rel="stylesheet" href="./assets.css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./font icon/fontawesome-free-6.2.1-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./font icon/fontawesome-free-6.2.1-web/css/solid.css"
+    />
+  </head>
+  <style>
+    /* some of header are connected to main.css file */
+    /* header */
+    .header-newproduct {
+      position: fixed;
+      height: 9rem;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    li.header__nav-menu-item-newproduct {
+      list-style-type: none;
+    }
+    .header__nav-menu-list-newproduct {
+      display: flex;
+      justify-content: center;
+    }
+    .header__nav-menu-item-newproduct {
+      font-size: 1.8rem;
+      padding: 6px;
+      margin: 6px;
+    }
+    .header__nav-menu-item-newproduct > a:hover {
+      text-decoration-line: underline;
+      font-weight: bold;
+    }
+    .header__nav-menu-item-newproduct > a:active {
+      text-decoration-line: underline;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    .fixed {
+      text-decoration-line: underline;
+      font-weight: bold;
+    }
+    /* main */
+    .main-newproduct {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 650rem;
+      margin-top: 16rem;
+      text-align: center;
+      justify-content: space-evenly;
+    }
+    .main-newproduct-item {
+      margin-bottom: 2.6rem;
+    }
+    .main-newproduct-item > a {
+      text-decoration: none;
+    }
+    .main-newproduct-item > a:hover p,
+    .main-newproduct-item > a:hover h6 {
+      color: var(--primary-color);
+    }
+    .main-newproduct-item > a > img {
+      box-shadow: 2px 2px 3px 1px var(--border-color);
+      padding: 2px;
+      margin: 0 0.4rem;
+    }
+    .main-newproduct-item > a > h6 {
+      font-size: 1.6rem;
+      color: var(--text-color);
+      margin: 2rem 0 6px 0;
+    }
+    .main-newproduct-item > a > p {
+      font-size: 1.6rem;
+      color: var(--text-color);
+    }
+    /* Responsive layout */
+    @media (max-width: 600px) {
+      .main-newproduct-item {
+        width: 100%;
+      }
+    }
+    /* footer */
+    .footer-row {
+      width: 80%;
+      margin: 0 32rem;
+      color: #ccc;
+      font-size: 1.4rem;
+    }
+    .footer-column {
+      width: 20%;
+      float: left;
+      margin-top: 2rem;
+    }
+    .footer-column > ul > li {
+      list-style-type: none;
+      color: #ccc;
+      padding: 2px;
+      margin: 0.4rem;
+    }
+    .footer-column > ul > li > a {
+      color: #ccc;
+    }
+    .footer-column > ul > li :hover {
+      font-size: 1.6rem;
+      text-decoration-line: underline;
+    }
+    .footer-newproduct {
+      height: 26rem;
+      background-color: rgb(70, 71, 71);
+    }
+  </style>
+  <body>
+    <div id="container-shirt">
+      <div class="header-newproduct">
+        <div class="header__nav-login">
+          <ul class="header__nav-login-list">
+            <li class="header__nav-login-item">
+              <form action="" class="search-box">
+                <input class="search-text" type="text" placeholder="TÌm kiếm" />
+                <button class="search-btn">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </li>
+            <li class="header__nav-login-item">
+              <a href="file:///C:/Users/ADMIN/Desktop/html/App/signup.html"
+                >Đăng ký</a
+              >
+            </li>
+            <li class="header__nav-login-item">
+              <a
+                href="file:///C:/Users/ADMIN/Desktop/html/App/login.html?email=sfsf&password=fssdc#"
+              >
+                Đăng nhập</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header-lable">
+          <h1>K. BE UNIQUE</h1>
+        </div>
+        <div class="header__nav-menu-newproduct">
+          <ul class="header__nav-menu-list-newproduct">
+            <li class="header__nav-menu-item-newproduct fixed">
+              <a href="#">Sản phẩm mới</a>
+            </li>
+            <li class="header__nav-menu-item-newproduct">
+              <a href="#">Áo sơ mi</a>
+            </li>
+            <li class="header__nav-menu-item-newproduct">
+              <a href="#">Váy</a>
+            </li>
+            <li class="header__nav-menu-item-newproduct">
+              <a href="#">Sale</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-newproduct">
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-caro 2.jpg" alt="Shirt-caro" />
+            <h6>Áo sơ mi caro</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-caro.jpg" alt="Shirt-caro" />
+            <h6>Áo sơ mi kiểu</h6>
+
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-checkered (2).jpg" alt="Shirt-caro" />
+            <h6>Áo sơ mi kiểu</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-checkered (3).jpg" alt="Shirt-caro" />
+            <h6>Áo sơ mi kiểu</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-checkered.jpg" alt="Shirt-caro" />
+            <h6>Áo sơ mi kiểu</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-checkered (4).jpg" alt="Shirt-caro" />
+            <h6>Áo sơ mi kiểu</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-color (2).jpg" alt="shirt-color" />
+            <h6>Áo sơ mi kiểu</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-color (3).jpg" alt="shirt-color" />
+            <h6>Áo sơ mi kiểu</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Shirt-kiểu (2).jpg" alt="shirt-color" />
+            <h6>Áo sơ mi kiểu</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/shirt-kiểu.jpg" alt="shirt-color" />
+            <h6>Áo sơ mi kiểu</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/dress-flower.jpg" alt="dress-flower" />
+            <h6>Váy hoa điệu đà</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/Dress-long.jpg" alt="dress-flower" />
+            <h6>Váy hoa điệu đà</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/flower dress.jpg" alt="dress-flower" />
+            <h6>Váy hoa điệu đà</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/flower dress.jpg" alt="dress-flower" />
+            <h6>Váy hoa điệu đà</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+        <div class="main-newproduct-item">
+          <a href="#">
+            <img src="./images/flower dress.jpg" alt="" />
+            <h6>Váy hoa điệu đà</h6>
+            <p>Giá 139.000 VNĐ</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-newproduct">
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>MUA SẮM NÀO</h4>
+            <ul>
+              <li>
+                <a href="#" target="_self">Tài khoản của tôi</a>
+              </li>
+              <li><a href="#" target="_self">Chính sách Giao Hàng</a></li>
+              <li>
+                <a href="#" target="_self">Chính sách Bảo hành & Đổi trả</a>
+              </li>
+              <li><a href="#" target="_self">Khuyến mãi</a></li>
+              <li><a href="#" target="_self">Bảng quy đổi kích thước</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+            <ul>
+              <li><a href="#" target="_self">Ưu đãi thành viên</a></li>
+              <li><a href="#" target="_self">Câu hỏi thường gặp</a></li>
+              <li><a href="#" target="_self">Liên hệ</a></li>
+              <li>
+                <a href="#" target="_self">Báo cáo hàng kém chất lượng</a>
+              </li>
+              <li><a href="#" target="_self">Chính sách Thanh Toán</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>VỀ CHÚNG TÔI</h4>
+            <ul>
+              <li><a href="#" target="_self">Định vị thương hiệu</a></li>
+              <li><a href="#" target="_self">Lịch sử hình thành</a></li>
+              <li><a href="#" target="_self">ý nghĩa nhân văn</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>THEO DÕI CHÚNG TÔI</h4>
+            <ul>
+              <li>
+                <a href="#" target="_self">
+                  <i class="fa-brands fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_self">
+                  <i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_self">
+                  <i class="fa-brands fa-tiktok"></i> Tiktok</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_self">
+                  <i class="fa-solid fa-envelope"></i> Email</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
